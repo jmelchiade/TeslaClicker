@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("Tesla\ Coil\ img.jpeg");
+}
+
+#container {
+  min-width: 50vw;
+  max-height: 50vh;
+  display: flex;
+}
+
+.left-container {
+  min-width: 50vw;
+  max-height: 100vh;
+  position: relative;
+}
+
+.right-container {
+  min-width: 50vw;
+}
+
+.middle-container {
+  min-width: 50vw;
+  margin-top: 150px;
+}
+
+.gif {
+  height: 250px;
+  width: 700px;
+  border-radius: 100px;
+}
+
+.disc {
+  display: flex;
+  width: 16em;
+  height: 16em;
+  border-radius: 50%;
+  background-color: lightgoldenrodyellow;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+img.nikola {
+  height: 200px;
+  width: 200px;
+  background-color: transparent;
+}
+
+.iq {
+  display: flex;
+  font-family: fantasy;
+  justify-content: space-between;
+  margin-top: 230px;
+  font-size: 100px;
+  color: violet;
+  font-size: 23px;
+  margin-left: 400px;
+}
+
+#counter {
+  margin-right: 50px;
+}
+
+.totalScore {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: violet;
+  font-family: fantasy;
+  margin-left: 400px;
+  margin-top: 0px;
+  padding: 0;
+  font-size: 23px;
+}
+
+p {
+  margin-left: 21px;
+}
+
+/* .right-container {
+  
+} */
+
+.upgrade-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100vh;
+  height: 100vh;
+  margin-left: 30px;
+  margin-right: 300px;
+  /* border: solid black 3px; */
+}
+
+/* .right-container-header {
+  /* padding: 10px; */
+
+h1 {
+  color: violet;
+  font-family: fantasy;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.equipment-type-container {
+  border: brown solid 5px;
+  background-color: lightgoldenrodyellow;
+  width: 270px;
+  margin-right: 15px;
+}
+
+.equipment-details {
+  padding: 20px;
+  width: 260px;
+  font-family: monospace;
+  border-bottom: violet solid 5px;
+}
+
+.buy-button {
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: dashed;
+  display: inline-block;
+  font-size: 16px;
+  font-family: monospace;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  transition-duration: 0.04s;
+  background-color: darkslateblue;
+  color: lavender;
+  border: brown solid 2px;
+}
+
+.iq-clicker {
+  color: transparent;
+  background-color: transparent;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  font-family: monospace;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.iq-clicker:hover {
+  background-color: darkslateblue;
+  color: lavender;
+  border: brown solid 2px;
+  border-radius: 300px;
+}
+
+span {
+  color: violet;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" defer src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Something Clever</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="left-container">
+        <div class="iq" onclick="seconds()">IQ:<span id="score">0 </span></div>
+        <div class="totalScore" onclick="synapses()">
+          <span id="synap_sec">0 synapses/second</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="disc">
+      <button class="iq-clicker" onclick="iqClicker()">
+        <img class="nikola" src="Telsa-Sitting.png" alt="Nikola" />
+      </button>
+    </div>
+
+    <div class="middle-container">
+      <img class="gif" src="gif.gif" salt="electricity" />
+    </div>
+
+    <div class="right-container">
+      <div class="upgrade-container">
+        <h1>Inventions</h1>
+        <div class="right-container-header">
+          <div class="equipment">
+            <div class="equipment-type-container">
+              <div class="equipment-details">
+                <button class="buy-button" onclick="buyPatent()">Patent</button>
+                <div>Wi-Fi</div>
+                <div>Quantity:<span id="quantity">0</span></div>
+                <div>Synapses/second: <span id="synSeconds">369</span></div>
+                <div>Cost: <span id="cost">2</span>IQ</div>
+              </div>
+              <div class="equipment-details">
+                <button class="buy-button" onclick="buyPatent2()">
+                  Patent
+                </button>
+                <div>Tesla Coil</div>
+                <div>Quantity <span id="teslaCoil">0 </span></div>
+                <div>Synapses/second: <span id="synSeconds">136,161</span></div>
+                <div>Cost: <span id="cost">6,000 </span>IQ</div>
+              </div>
+              <div class="equipment-details">
+                <button class="buy-button" onclick="buyPatent3()">
+                  Patent
+                </button>
+                <div>Teleforce</div>
+                <div>Quantity: <span id="teleForce">0</span></div>
+                <div>
+                  Synapses/second: <span id="synSeconds">180,000,000</span>
+                </div>
+                <div>Cost: <span id="cost">9,180,600,036 </span>IQ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
