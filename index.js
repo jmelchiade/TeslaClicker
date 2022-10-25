@@ -15,10 +15,14 @@ function seconds() {
   if (score > 0) {
     setInterval(iqClicker(), 1000);
   }
+}
 
-  const wiFiCount = document.getElementById("quantity");
+let wiFiCount = document.getElementById("quantity");
+const wifiQuantity = document.getElementById("wifiQuantity");
+// wifiQuantity.addEventListener('click', () => {console.log('buy patent button')})
 
   function buyPatent() {
+    
     wiFi = wiFiCount.innerText;
     if (score >= 2) {
       score -= 2;
@@ -27,7 +31,7 @@ function seconds() {
     }
   }
 
-  const teslaCoilCount = document.getElementById("teslaCoil");
+ let teslaCoilCount = document.getElementById("teslaCoil");
 
   function buyPatent2() {
     teslaCoil += 1;
@@ -38,7 +42,7 @@ function seconds() {
     }
   }
 
-  const teleForceCount = document.getElementById("teleForce");
+  let teleForceCount = document.getElementById("teleForce");
 
   function buyPatent3() {
     teleForce += 1;
@@ -48,4 +52,9 @@ function seconds() {
       teleForceCount.innerText = teleForce;
     }
   }
+
+
+function test(){
+  console.log('test')
 }
+
