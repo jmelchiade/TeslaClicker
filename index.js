@@ -2,6 +2,8 @@ let score = 0;
 let wiFi = 0;
 let teslaCoil = 0;
 let teleForce = 0;
+let allProducers = 0;
+
 
 const scoreDisplay = document.getElementById("score");
 const secondsTimer = document.getElementsByClassName("counter-container");
@@ -9,17 +11,36 @@ const secondsTimer = document.getElementsByClassName("counter-container");
 function iqClicker() {
   score += 1;
   scoreDisplay.innerText = score;
+  seconds()
 }
 
 function seconds() {
   if (score > 0) {
-    setInterval(iqClicker(), 1000);
-  }
+    setInterval(renderScore(), 1000);
+  } else{
+
+  } //set variable to false
 }
 
-let wiFiCount = document.getElementById("quantity");
-const wifiQuantity = document.getElementById("wifiQuantity");
-// wifiQuantity.addEventListener('click', () => {console.log('buy patent button')})
+function renderScore(){
+  
+const wiFiProducerRate = wiFi * 10
+const teslaCoilProducerRate = teslaCoil * 100
+const teleForceProducerRate = teleForce * 1000
+
+}
+
+// when renderScore() is called, take each producer rate combine together in all producer rates variable , use new variable number to increment score
+// run seconds() after first click, create variable that sets producers to false, changes to true when seconds() is called
+
+
+
+
+
+
+let wiFiCount = document.getElementById("wifiQuantity");
+// const wifiQuantity = document.getElementById("wifiQuantity");
+// wifiQuantity.addEventListener('click', () => {buyPatent()})
 
   function buyPatent() {
     
@@ -31,10 +52,9 @@ const wifiQuantity = document.getElementById("wifiQuantity");
     }
   }
 
- let teslaCoilCount = document.getElementById("teslaCoil");
+ let teslaCoilCount = document.getElementById("teslaCoilQuantity");
 
   function buyPatent2() {
-    teslaCoil += 1;
     if (wiFi >= 5) {
       teslaCoil += 1;
 
@@ -42,10 +62,9 @@ const wifiQuantity = document.getElementById("wifiQuantity");
     }
   }
 
-  let teleForceCount = document.getElementById("teleForce");
+  let teleForceCount = document.getElementById("teleForceQuantity");
 
   function buyPatent3() {
-    teleForce += 1;
     if (teslaCoil >= 10) {
       teleForce += 1;
 
