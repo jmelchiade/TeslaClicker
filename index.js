@@ -4,9 +4,20 @@ let teslaCoil = 0;
 let teleForce = 0;
 let allProducers = 0;
 let firstTimeClicked = true;
+let income = 0;
+let synapsesPS = 0;
 
 const scoreDisplay = document.getElementById("score");
 const secondsTimer = document.getElementsByClassName("counter-container");
+const perSecond = document.getElementById("synap_sec");
+
+function passiveClicks() {
+  score = score + income;
+
+  scoreDisplay.innerText = score;
+  console.log("income function is working :>)", score, "is the score rn");
+}
+setInterval(passiveClicks, 1000);
 
 function iqClicker() {
   score += 1;
@@ -48,6 +59,8 @@ function buyPatent() {
     score -= 2;
     wiFi++;
     wiFiCount.innerText = wiFi;
+    income = income + 2;
+    perSecond.innerText = `${income} synapses/second`;
   }
 }
 
@@ -58,6 +71,8 @@ function buyPatent2() {
     teslaCoil += 1;
 
     teslaCoilCount.innerText = teslaCoil;
+    income = income + 5;
+    perSecond.innerText = `${income} synapses/second`;
   }
 }
 
@@ -68,6 +83,9 @@ function buyPatent3() {
     teleForce += 1;
 
     teleForceCount.innerText = teleForce;
+    income = income + 10;
+
+    perSecond.innerText = `${income} synapses/second`;
   }
 }
 
